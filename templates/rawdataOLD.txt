@@ -1,0 +1,13 @@
+
+<h1>More Details</h1>
+<ol>
+{% for r in zipr %}
+<hr>
+<li> {{ r[2][1]  }} at {{r[12][1] }}
+<ul> {% for d in r %}
+  <li>{{d[0][0]}}: {{d[1]}}</li>
+{% endfor %}
+</ul>
+</li>
+{% endfor %}
+</ol>
